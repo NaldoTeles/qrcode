@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0.1px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o container principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre os itens */
+    padding: 10px;
+}
+
+.item {
+    
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1 1 calc(25% - 20px); /* 25% da largura menos a gap */
+}
+
+input {
+    display: flex;
+    width: 98%;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px); /* 25% da largura menos a gap */
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+input:hover{
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px; 
+}
+
+select {
+    display: flex;
+    width: 98%;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 20px); /* 25% da largura menos a gap */
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+select:hover{
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px; 
+}
+
+.button{
+    border:none;
+    width: 98%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor:pointer;
+}
+.button:hover{
+    background-color:brown;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    color: aliceblue; 
+}
+
+.buttonsalvar{
+    border:none;
+    width: 19%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor:pointer;
+}
+.buttonsalvar:hover{
+    background-color:brown;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    color: aliceblue; 
+}
+
+
+.buttonhome{
+    border:none;
+    width: 19%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor:pointer;
+}
+
+.buttonhome:hover{
+    background-color:brown;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+/* Layout responsivo para telas menores */
+@media (max-width: 1024px) {
+    .item {
+        flex: 1 1 calc(33.33% - 20px); /* 33.33% da largura menos a gap */
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 20px); /* 50% da largura menos a gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 calc(100% - 20px); /* 100% da largura menos a gap */
+    }
+}
+
+
+

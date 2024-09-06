@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Lab. Tech</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+
+<body>
+    <div><img style="width: 100%;" src="banner.png"></div>
+
+    <div class="container">
+
+        <div class="item" style="border-color:#87CEFA; font-family: arial;">
+            <label>Digite ou cole a URL desejada.</label><br><br>
+            <input style="height:2rem; padding:0.5rem; border-radius: 0.5rem;" type="text" id="url" placeholder="URL">
+            <button onclick="generateQRCode()" style="margin-top: 1rem; padding: 0.5rem; border-radius: 0.5rem; background-color: #87CEFA; border: none; color: white;">Gerar QR Code</button>
+        </div>
+
+        <div class="item" id="qrcode" style="display:flex; align-items: center; flex-direction: column; justify-content: center; border-color:#87CEFA; font-family: arial;">
+            
+        </div>
+
+    </div>
+    <div class="item" style="text-align: center; font-family: Arial, Helvetica, sans-serif; background-color:white; border-color:white;">
+        <p><b>Francinaldo Teles - 2024</b></p><br><p><b>System Lab. Tech</b></p>
+    </div>
+
+    <script src="qrcode.js"></script>
+</body>
+
+</html>
